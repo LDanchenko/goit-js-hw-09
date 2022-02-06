@@ -44,7 +44,9 @@ function checkSelectedDate(selectedDates) {
     startButton.disabled = true;
     return;
   }
-  startButton.disabled = false;
+  if (timerId === null) {
+    startButton.disabled = false;
+  }
 }
 
 function convertMs(ms) {
