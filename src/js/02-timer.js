@@ -84,5 +84,6 @@ function stopTimer(result) {
     clearInterval(timerId);
     startButton.disabled = false;
     dateInput.disabled = false;
+    startButton.disabled = true;
   }
 }
